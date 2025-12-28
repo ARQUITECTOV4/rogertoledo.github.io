@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="es">
+<script src="https://unpkg.com/lucide@latest"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ROGER TOLEDO</title>
+  <meta name="description" content="Roger Toledo — Mentor of Men. Doctrina, conferencias, mentoring, libros y programas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Tipografía premium (puedes cambiarla luego) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<script>
+  // Evita error por ejecutar antes de que exista <nav>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('nav *').forEach(el => {
+      el.onmouseenter = null;
+      el.onmouseover = null;
+    });
+  });
+</script>
+
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+
+      <a class="brand" href="#" onclick="goHome();return false;">
+        <span class="brand-mark">ROGER TOLEDO</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+
+          <!-- ABOUT -->
+          <li class="nav-item">
+            <a class="nav-link" href="#about" data-page="about">ABOUT</a>
+          </li>
+
+          <!-- CONFERENCES -->
+          <li class="nav-item">
+            <a class="nav-link" href="#conferences" data-page="conferences">CONFERENCES</a>
+          </li>
+
+          <!-- MENTORING -->
+          <li class="nav-item">
+            <a class="nav-link" href="#mentoring" data-page="mentoring">MENTORING</a>
+          </li>
+
+          <!-- LIBROS -->
+          <li class="nav-item">
+            <a class="nav-link" href="#libros" data-page="libros">LIBROS</a>
+          </li>
+
+          <!-- PROGRAMAS -->
+          <li class="nav-item">
+            <a class="nav-link" href="#programas" data-page="programas">PROGRAMAS</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- =========================
+       HOME CONTENT
+  ========================== -->
+  <main id="home">
+    <section class="hero hero-centered">
+      <div class="container hero-centered-inner">
+
+        <!-- FOTO PRINCIPAL CENTRADA -->
+        <div class="hero-frame">
+          <img src="assets/hero.png" alt="Roger Toledo" />
+
+          <div class="hero-title-overlay">
+            <div class="hero-role">MENTOR OF MEN</div>
+            <div class="hero-institution">
+              <span>FOUNDER • BLACK ROOM PARTNERS</span>
+              <span>CEO • ALTA MUSA</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-divider"></div>
+    </section>
+
+    <!-- =========================
+         PROGRAMAS (vertical cards)
+    ========================== -->
+    <section id="programas" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">PROGRAMAS</div>
+          <h2 class="section-title">BLACK ROOM</h2>
+          <p class="section-text subtle">Three Programs. One Doctrine</p>
+        </div>
+
+        <div class="programs-vertical">
+          <!-- 1 -->
+          <article class="program-v">
+            <div class="program-v-media">
+              <img src="assets/hero-title-overlay.jpeg" alt="Black Room Method" />
+            </div>
+            <div class="program-v-body">
+              <h3 class="program-v-title">BLACK ROOM METHOD™</h3>
+              <p class="program-v-text">El sistema central.
+Ingeniería de identidad masculina, poder interno y éxito estratégico.
+Arquitectura mental, emocional y conductual para hombres que operan por encima del promedio.</p>
+              <a 
+                href="https://wa.me/51977992912?text=Hola%2C%20solicito%20acceso%20al%20programa%20BLACK%20ROOM%20METHOD%E2%84%A2."
+                class="btn-primary"
+                target="_blank"
+              >
+                ACCEDER
+              </a>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="program-v">
+            <div class="program-v-media">
+              <img src="assets/program-social-dominance.jpeg" alt="Social Dominance Protocol" />
+            </div>
+            <div class="program-v-body">
+              <h3 class="program-v-title">SOCIAL DOMINANCE PROTOCOL™</h3>
+              <p class="program-v-text">Protocolos de dominancia social basados en dinámica social y seducción estratégica.
+Lectura de jerarquías, control del marco y atracción aplicada en entornos reales.</p>
+              <a 
+                href="https://wa.me/51977992912?text=Hola%2C%20solicito%20informaci%C3%B3n%20y%20evaluaci%C3%B3n%20para%20SOCIAL%20DOMINANCE%20PROTOCOL%E2%84%A2."
+                class="btn-primary"
+                target="_blank"
+              >
+                ACCEDER
+              </a>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="program-v">
+            <div class="program-v-media">
+              <img src="assets/program-elite-physique.jpeg" alt="Elite Physique Blueprint" />
+            </div>
+            <div class="program-v-body">
+              <h3 class="program-v-title">ELITE PHYSIQUE BLUEPRINT™</h3>
+              <p class="program-v-text">El cuerpo como instrumento de poder y señal de autodominio.
+Disciplina física aplicada a la presencia, la resistencia mental y la autoridad encarnada.
+El físico no como exhibición, sino como prueba silenciosa de control interno.</p>
+              <a 
+                href="https://wa.me/51977992912?text=Hola%2C%20solicito%20acceso%20al%20programa%20ELITE%20PHYSIQUE%20BLUEPRINT%E2%84%A2."
+                class="btn-primary"
+                target="_blank"
+              >
+                ACCEDER
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         COACHING / MENTORING OFFERS
+    ========================== -->
+    <div class="offers offers--stack">
+
+      <!-- Corporate Advisory -->
+      <article class="offer offer--split">
+        <div class="offer-media">
+          <img src="assets/offers/corporate-advisory.jpeg" alt="Corporate Advisory" loading="lazy" />
+        </div>
+
+        <div class="offer-content">
+          <div class="offer-head">
+            <div class="offer-title">CORPORATE ADVISORY</div>
+            <div class="offer-tag">B2B · Alto impacto</div>
+          </div>
+
+          <p class="offer-text">
+            Intervenciones estratégicas para liderazgo, influencia y rendimiento.
+            Diseñado para organizaciones que operan bajo presión real.
+          </p>
+
+          <ul class="offer-list">
+            <li>Workshops ejecutivos cerrados</li>
+            <li>Keynotes estratégicos de alto impacto</li>
+            <li>Intervención directa en toma de decisiones</li>
+          </ul>
+
+          <div class="offer-actions">
+            <a
+              href="https://wa.me/51977992912?text=Hola%2C%20solicito%20un%20briefing%20privado%20para%20Corporate%20Advisory."
+              class="btn-primary"
+              target="_blank"
+            >
+              Solicitar briefing privado
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 1:1 Mentoring -->
+      <article class="offer offer--split offer--reverse">
+        <div class="offer-media">
+          <img src="assets/offers/mentoring-1-1.jpeg" alt="1:1 Mentoring" loading="lazy" />
+        </div>
+
+        <div class="offer-content">
+          <div class="offer-head">
+            <div class="offer-title">1:1 MENTORING</div>
+            <div class="offer-tag">Acceso selectivo</div>
+          </div>
+
+          <p class="offer-text">
+            Estructura interna, dirección y poder con capacidad de ejecución real.
+          </p>
+
+          <ul class="offer-list">
+            <li>Diagnóstico estructural directo</li>
+            <li>Sistema de ejecución semanal</li>
+            <li>Accountability sin intermediarios</li>
+          </ul>
+
+          <div class="offer-actions">
+            <a href="https://wa.me/51977992912?text=Hola%2C%20solicito%20una%20evaluaci%C3%B3n%20para%20el%20programa%201%3A1%20Mentoring." class="btn-primary" target="_blank">
+              Solicitar evaluacion
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- =========================
+         LIBROS (duel layout)
+    ========================== -->
+    <section id="libros" class="volumes">
+
+      <div class="volume">
+        <img src="assets/elmundotemintio.png" alt="Libro Dominio" class="volume-cover">
+        <span class="volume-index">VOLUMEN I</span>
+        <h2 class="volume-title">EL MUNDO TE MINTIO, YO VINE A DECIRTE LA VERDAD</h2>
+
+        <p class="volume-desc">
+          Exposicion del sistema, la manipulacion y la salida: claridad, disciplina y verdad<br>
+          Fue escrito para transformar.
+        </p>
+
+        <div class="volume-actions">
+          <a
+  href="https://wa.me/51977992912?text=Hola%20quiero%20adquirir%20el%20libro%20EL%20MUNDO%20TE%20MIENTE"
+  target="_blank"
+  class="btn-acceder"
+>
+  ACCEDER
+</a>
+
+          <span class="volume-note">Acceso bajo criterio</span>
+        </div>
+      </div>
+
+      <div class="volume">
+        <img src="assets/dominio.png" alt="Libro Elmundo" class="volume-cover">
+        <span class="volume-index">VOLUMEN II</span>
+        <h2 class="volume-title">DOMINIO: LA ARQUITECTURA DEL PODER MASCULINO</h2>
+
+        <p class="volume-desc">
+          No es un libro para todos.
+          Es un libro para quienes están listos para asumir control total
+          sobre su mente, su cuerpo y su dirección.
+
+          DOMINIO no eleva a las masas.
+          Selecciona.
+        </p>
+
+        <div class="volume-actions">
+          <a
+  href="https://wa.me/51977992912?text=Hola%20quiero%20adquirir%20el%20libro%20DOMINIO"
+  target="_blank"
+  class="btn-acceder"
+>
+  ACCEDER
+</a>
+
+          <span class="volume-note">Acceso bajo criterio</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =========================
+         CONFERENCIAS (vertical months)
+    ========================== -->
+    <section id="agenda" class="section agenda-elite">
+      <div class="container">
+
+        <div class="agenda-head">
+          <h2>Agenda 2026</h2>
+          <p>Six cities · Invitation only</p>
+        </div>
+
+        <div class="agenda-list">
+
+          <div class="agenda-row" style="--flag:url('assets/agenda/newyork.jpg')">
+            <div class="agenda-date">ENERO 2026</div>
+            <div class="agenda-city">NEW YORK</div>
+            <div class="agenda-type">Conference • Invitational</div>
+            <a class="agenda-cta" href="#apply">REQUEST ACCESS</a>
+          </div>
+
+          <div class="agenda-row" style="--flag:url('assets/agenda/lima.jpg')">
+            <div class="agenda-date">FEBRERO 2026</div>
+            <div class="agenda-city">LIMA</div>
+            <div class="agenda-type">Conference • Invitational</div>
+            <a class="agenda-cta" href="#apply">REQUEST ACCESS</a>
+          </div>
+
+          <div class="agenda-row" style="--flag:url('assets/agenda/milano.jpeg')">
+            <div class="agenda-date">MARZO 2026</div>
+            <div class="agenda-city">MILANO</div>
+            <div class="agenda-type">Conference • Invitational</div>
+            <a class="agenda-cta" href="#apply">REQUEST ACCESS</a>
+          </div>
+
+          <div class="agenda-row" style="--flag:url('assets/agenda/medellin.jpeg')">
+            <div class="agenda-date">ABRIL 2026</div>
+            <div class="agenda-city">MEDELLIN</div>
+            <div class="agenda-type">Conference • Invitational</div>
+            <a class="agenda-cta" href="#apply">REQUEST ACCESS</a>
+          </div>
+
+          <div class="agenda-row" style="--flag:url('assets/agenda/buenosaires.jpeg')">
+            <div class="agenda-date">MAYO 2026</div>
+            <div class="agenda-city">BUENOS AIRES</div>
+            <div class="agenda-type">Conference • Invitational</div>
+            <a class="agenda-cta" href="#apply">REQUEST ACCESS</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         PODCAST (minimal)
+    ========================== -->
+    <section id="podcast" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">PODCAST</div>
+          <h2 class="section-title">Transmisiones</h2>
+          <p class="section-text">
+            Preciso. Directo. Sin concesiones.
+          </p>
+        </div>
+
+        <div class="episode">
+          <div class="episode-meta">
+            <div class="episode-kicker">Episodio 01 · Transmisión</div>
+            <div class="episode-title">La verdad no se negocia</div>
+            <div class="episode-sub">12 min · Audio · Archivo</div>
+          </div>
+          <a class="episode-cta" href="#">play</a>
+        </div>
+
+        <div class="episode">
+          <div class="episode-meta">
+            <div class="episode-kicker">Episodio 02 · Transmisión</div>
+            <div class="episode-title">Jamas dudes</div>
+            <div class="episode-sub">18 min · Audio · Archivo</div>
+          </div>
+          <a class="episode-cta" href="#">play</a>
+        </div>
+
+        <div class="episode">
+          <div class="episode-meta">
+            <div class="episode-kicker">Episodio 03 · Transmisión</div>
+            <div class="episode-title">El mañana no existe</div>
+            <div class="episode-sub">12 min · Audio · Archivo</div>
+          </div>
+          <a class="episode-cta" href="#">play</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         CONTACT (Aplicación / Booking)
+    ========================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">CONTACT</div>
+          <h2 class="section-title">Solicitud</h2>
+          <p class="section-text">
+            Esto no es “contacto”. Es solicitud. Si no es serio, no avanza.
+          </p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="field-grid">
+            <div class="field">
+              <label for="name">Nombre</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="field">
+              <label for="contactEmail">Correo</label>
+              <input id="contactEmail" name="contactEmail" type="email" required />
+            </div>
+            <div class="field">
+              <label for="type">Tipo</label>
+              <select id="type" name="type" required>
+                <option value="">Selecciona…</option>
+                <option value="mentoring">Mentoring 1:1 (Apply)</option>
+                <option value="elite">Programa Élite</option>
+                <option value="corporate">Corporate Advisory / Conferencia</option>
+                <option value="press">Prensa / Media</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="country">País</label>
+              <input id="country" name="country" type="text" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="6" placeholder="Describe objetivo, contexto y urgencia."></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Enviar</button>
+          <div class="form-note">Respuesta solo a solicitudes calificadas.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <main id="page" class="is-hidden">
+    <!-- Aquí se inyectarán /pages/about.html, /pages/mentoring.html, etc. -->
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-mark footer-brand-mark">ROGER TOLEDO</div>
+          <div class="footer-tagline">THE TRUTH IS NOT NEGOTIABLE</div>
+        </div>
+
+        <div class="footer-doctrine">
+          <form>
+            <input type="email" placeholder="Tu correo" required>
+            <button type="submit">Entrar</button>
+          </form>
+        </div>
+
+        <div class="footer-block">
+          <div class="footer-title">LEGAL</div>
+          <div class="footer-item">
+            <a href="/privacy-policy">Privacy Policy</a>
+          </div>
+          <div class="footer-item">
+            <a href="/terms-of-service">Terms of Service</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Institucional</div>
+          <a href="https://blackroompartners.com" target="_blank" rel="noopener">Black Room Partners</a>
+          <a href="https://altamusa.com" target="_blank" rel="noopener">Alta Musa</a>
+        </div>
+
+        <div class="footer-col">
+      <div class="social-icons">
+  <a class="social-btn" href="https://facebook.com/rogertoledo.co" target="_blank" aria-label="Facebook">
+    <!-- Facebook -->
+    <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+      <path d="M14 9h3V6h-3c-2.21 0-4 1.79-4 4v3H7v3h3v6h3v-6h3l1-3h-4v-3c0-.55.45-1 1-1z"/>
+    </svg>
+  </a>
+
+  <a class="social-btn" href="https://instagram.com/rogertoledo.co" target="_blank" aria-label="Instagram">
+    <!-- Instagram -->
+    <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+      <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3z"/>
+      <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+      <path d="M17.5 6.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    </svg>
+  </a>
+
+  <a class="social-btn" href="https://youtube.com/rogertoledoco" target="_blank" aria-label="YouTube">
+    <!-- YouTube -->
+    <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+      <path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.8 4.6 12 4.6 12 4.6s-5.8 0-7.5.5A3 3 0 0 0 2.4 7.2 31 31 0 0 0 2 12a31 31 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.7.5 7.5.5 7.5.5s5.8 0 7.5-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22 12a31 31 0 0 0-.4-4.8z"/>
+      <path d="M10 15.5v-7l6 3.5-6 3.5z" fill="currentColor"/>
+    </svg>
+  </a>
+
+  <a class="social-btn" href="https://open.spotify.com/rogertoledoco" target="_blank" aria-label="Spotify">
+    <!-- Spotify -->
+    <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+      <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.57 14.5a.9.9 0 0 1-1.24.3c-2.55-1.56-5.76-1.92-9.55-1.07a.9.9 0 1 1-.39-1.76c4.23-.95 7.86-.52 10.78 1.25.42.26.56.81.4 1.28zm.88-2.87a1.05 1.05 0 0 1-1.44.35c-2.92-1.79-7.36-2.31-10.79-1.27a1.05 1.05 0 1 1-.61-2.01c3.95-1.2 8.86-.62 12.24 1.46.5.31.66.96.6 1.47zm.08-3.07c-3.5-2.08-9.28-2.27-12.62-1.26a1.2 1.2 0 0 1-.7-2.29c3.84-1.17 10.23-.94 14.26 1.47a1.2 1.2 0 0 1-1.24 2.08z"/>
+    </svg>
+  </a>
+
+  <a class="social-btn" href="https://tiktok.com/rogertoledo.co" target="_blank" aria-label="TikTok">
+    <!-- TikTok -->
+    <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+      <path d="M16.6 3c.5 2.9 2.7 4.7 5.4 4.9v3.2c-1.9.1-3.7-.5-5.4-1.6v6.7c0 4-3.1 7.3-7.1 7.3-4.2 0-7.5-3.4-7.1-7.8.3-3.2 3-5.9 6.2-6.2 1-.1 1.9 0 2.7.3v3.5c-.7-.3-1.5-.4-2.3-.2-1.6.4-2.8 1.8-2.9 3.5-.2 2.2 1.5 4.1 3.7 4.1 2 0 3.5-1.6 3.5-3.6V3h3.3z"/>
+    </svg>
+  </a>
+
+  <a class="social-btn" href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+    <!-- LinkedIn -->
+    <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+      <path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3.5 21h3V9h-3v12zM9 9h2.9v1.6h.04c.4-.8 1.4-1.7 2.9-1.7 3.1 0 3.7 2 3.7 4.6V21h-3v-6.2c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3V21H9V9z"/>
+    </svg>
+  </a>
+</div>
+
+
+      <div class="footer-bottom">
+        <div>© <span id="year"></span> Roger Toledo. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+<script>
+  const WHATSAPP_NUMBER = "51977992912"; // tu WhatsApp Business (sin +)
+
+  document.querySelectorAll(".agenda-cta").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault(); // evita que vaya a #apply
+
+      const row = btn.closest(".agenda-row");
+      const date = row?.querySelector(".agenda-date")?.innerText.trim() || "";
+      const city = row?.querySelector(".agenda-city")?.innerText.trim() || "";
+      const type = row?.querySelector(".agenda-type")?.innerText.trim() || "";
+
+      const message = `Hola. Solicito acceso a la conferencia: ${city} (${date}) — ${type}. ¿Cómo procedemos?`;
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+      window.open(url, "_blank");
+    });
+  });
+</script>
+
+</body>
+
+</html>
