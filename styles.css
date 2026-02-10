@@ -4006,12 +4006,4 @@ footer {
     min-height: auto;
   }
 }
-/* === HERO IMAGE SCALE DOWN === */
-.hero,
-.hero-section,
-.hero-banner {
-  background-image: url("assets/hero.png");
-  background-size: 60% auto; /* achica la figura */
-  background-position: center top;
-  background-repeat: no-repeat;
-}
+
