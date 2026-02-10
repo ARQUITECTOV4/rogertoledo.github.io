@@ -4011,7 +4011,7 @@ footer {
 .hero-section,
 .hero-banner {
   background-image: url("assets/hero.png");
-  background-size: 82% auto; /* achica la figura */
+  background-size: 60% auto; /* achica la figura */
   background-position: center top;
   background-repeat: no-repeat;
 }
